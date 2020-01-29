@@ -1,0 +1,130 @@
+---
+title: "Intro to RMarkdown"
+author: "Leslie Huang"
+date: "Text-as-Data Lab 1/30/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Intro to RMarkdown
+
+This is a quick primer in creating your first RMarkdown document. Homework assignments for this course must be submitted as a single RMarkdown-generated PDF or HTML file that includes all written answers, code, and necessary output (e.g. figures). We will use some basic options for RMarkdown, which has much more customization than is required for this course.
+
+## Resources
+
+RMarkdown ([https://rmarkdown.rstudio.com/](https://rmarkdown.rstudio.com/)) is extensively documented.
+
+
+Cheat sheet and reference guide (accessible in RStudio through Help > Cheatsheets): 
+
+- [https://www.rstudio.org/links/r_markdown_cheat_sheet](https://www.rstudio.org/links/r_markdown_cheat_sheet)
+
+- [https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+
+Comprehensive resource:
+
+- [https://bookdown.org/yihui/rmarkdown/](https://bookdown.org/yihui/rmarkdown/)
+
+
+## Getting started
+
+In RStudio, go to File > New File > R Markdown to create a new RMarkdown document. Select "PDF" as the output type (this can be changed later).
+
+## Document header
+
+The document header is automatically generated when the RMarkdown file is created. It looks like this:
+
+```
+---
+title: "Intro to RMarkdown"
+author: "Leslie Huang"
+date: "1/30/2020"
+output: pdf_document
+---
+```
+
+Use ``output: pdf_document`` to generate your document as a PDF ``output: html_document`` will create a HTML page.
+
+## Generating your PDF/HTML document
+
+Click the "Knit" icon with the ball of yarn in the toolbar. Assuming your code does not have errors, this will save your output document in your working directory and a preview will pop up.
+
+## Formatting/organizing your document
+
+You can use Markdown as usual, e.g. "#" for section headers. See the reference guide above for more commands.
+
+## Code chunks
+
+A code chunk is surrounded by three pairs of backticks. In every chunk, you should provide ``{r unique_chunk_name, [additional options]}``.
+
+````markdown
+`r ''````{r literal, echo = TRUE}
+summary(cars)
+```
+````
+
+This is the same code shown as above, but as an actual chunk that is run, with both code/output shown.
+
+```{r example, echo=TRUE}
+# Example code chunk
+
+summary(cars)
+```
+
+The options (`echo`, `eval`, etc.) allow you to show/hide/run the code/output. Click the gear in the top right corner of the code chunk to choose between them, and the appropriate chunk options will automatically be updated.
+
+### echo
+
+For example, the following chunk is the same as above, except it uses `echo = FALSE` to only show the output, not the code. (_In general, for HW assignments, you must show both code and output to receive credit._)
+
+```{r noecho, echo=FALSE}
+# This code will not appear, but the output will appear
+summary(cars)
+```
+
+### eval
+
+Use `eval = FALSE` to not run the code.
+
+```{r cars, eval=FALSE, echo = TRUE}
+# This code will appear exactly as shown below. 
+# There is a syntax error, but since the code is not evaluated, 
+# the document knits without problems.
+summary(cars
+```
+
+## Why doesn't my code work?
+
+- If there are errors in your code, your RMarkdown document will not compile. In the top right corner, the options under "Run" will allow you to run sections of chunks to debug.
+
+- Code must be in your RMarkdown document to run when the document is generated. If code is run only in the console during your work session, it will not be included. For example, make sure all library imports are in the RMarkdown document.
+
+- Using duplicate names for code chunks causes errors.
+
+- Stray backtick symbols in your document will interfere with the chunks.
+
+## Including Plots
+
+You use the code chunk options (via the gear option or `fig.height=X`) to specify the figure size when including plots. When generating RMarkdown documents, check sure the figures display correctly.
+
+```{r pressure, echo=FALSE, fig.height=4}
+plot(pressure)
+```
+
+## Dataframes
+
+Dataframes can be displayed in RMarkdown documents. When making RMarkdown to PDF, check that the table width does not run off the page.
+
+```{r df, echo=TRUE}
+head(cars)
+```
+
+For extra pretty tables, the packages ``kable`` and ``kableExtra`` allow even more customization.
+
+More info: 
+
+- [https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)
+
