@@ -19,3 +19,6 @@ Before the first lab, please make sure you have R and (the free version of) RStu
 - Professor: Arthur Spirling
 - Tuesdays 11-12:40pm
 - 60FA Rm 110
+
+## Credits
+The lab materials were created, updated, and revised by Arthur Spirling, Kevin Munger, Patrick Chester, Leslie Huang, and Pedro L. Rodríguez.
