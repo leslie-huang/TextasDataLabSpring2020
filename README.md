@@ -7,6 +7,8 @@ Lab materials will be uploaded here prior to each lab session.
 
 Before the first lab, please make sure you have R and (the free version of) RStudio (https://rstudio.com) on your machine.
 
+# *Please see NYU Classes for information about HW 1.*
+
 ## Lab info
 - Thursdays 2-2:50pm
 - 60FA Rm 110
