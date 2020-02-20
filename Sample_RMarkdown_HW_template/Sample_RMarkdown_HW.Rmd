@@ -1,0 +1,48 @@
+---
+title: "Text as Data HW 1"
+author: "Your Name and NetID"
+date: "2/18/2020"
+output: pdf_document
+---
+
+
+# See the HW 1 assignment for the full instructions about formatting your homework submission. Some reminders:
+
+## Make sure your Markdown output shows both CODE and OUTPUT.
+
+## If you write a function to use in multiple question parts, you only need to include the function definition one time. If you load data, create a variable, etc, that you use in multiple question parts, you only need to load the data or create the variable one time.
+
+## Do NOT include written answers as code comments in code chunks.
+
+## Using this template is not required.
+
+------
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=TRUE}
+# import libraries
+library(quanteda)
+library(quanteda.corpora)
+```
+
+## Q1a
+
+```{r echo=TRUE}
+# your code to compute the answer
+# ** Make sure your markdown document shows both CODE and OUTPUT **
+print("hello")
+```
+
+Your written answer goes here.
+
+## Q1b
+
+```{r echo=TRUE}
+# your code 
+print(1+2)
+```
+
+Your written answer to Q1b goes here.
