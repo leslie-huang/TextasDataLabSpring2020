@@ -54,7 +54,7 @@ TTR <- textstat_lexdiv(budget_tokens, measure = "TTR")
 
 
 #------------------------------
-# 4 COMPLEXITY (READIBILITY) MEASURES
+# 4 COMPLEXITY (READABILITY) MEASURES
 #------------------------------
 
 # 4.1 FRE (https://en.wikipedia.org/wiki/Flesch–Kincaid_readability_tests)
