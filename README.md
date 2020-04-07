@@ -7,11 +7,13 @@ Lab materials will be uploaded here prior to each lab session.
 
 Before the first lab, please make sure you have R and (the free version of) RStudio (https://rstudio.com) on your machine.
 
-# *Important announcement* #
+# *Important announcements* #
+
+There will be no lab on April 16.
 
 Registered students and auditors should check the NYU Classes website for information about accessing the labs via Zoom for the remainder of term. 
 
-# *Please see NYU Classes for information about HW 2.*
+# *Please see NYU Classes for information about HW 3.*
 
 ## Lab info
 - Thursdays 2-2:50pm
