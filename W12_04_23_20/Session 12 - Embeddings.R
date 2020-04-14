@@ -4,15 +4,6 @@
 
 # Lab adapted from: Leslie Huang and Pedro L. Rodríguez
 
-# Supervised vs. Unsupervised
-# topic-models: excellent for exploration
-# supervised exploration of topics: classification on text snippets with keywords (e.g. Venezuela project)
-# semi-supervised approaches: https://github.com/gregversteeg/corex_topic
-# see: https://medium.com/pew-research-center-decoded/overcoming-the-limitations-of-topic-models-with-a-semi-supervised-approach-b947374e0455
-
-# -----------------------------------------------
-# Structural Topic Models                       ---
-# -----------------------------------------------
 rm(list = ls())
 libraries <- c("dplyr", "quanteda")
 lapply(libraries, require, character.only = T)
