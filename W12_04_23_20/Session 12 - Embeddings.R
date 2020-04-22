@@ -1,6 +1,6 @@
 # TA: Leslie Huang
 # Course: Text as Data
-# Date: 04/09/2020
+# Date: 04/23/2020
 
 # Lab adapted from: Leslie Huang and Pedro L. Rodríguez
 
